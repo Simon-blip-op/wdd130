@@ -1,5 +1,5 @@
 :root {
-    --primar-coolor: #0a3d62;
+    --primary-coolor: #0a3d62;
     --secondary-color: #62b6cb;
     --accent1-color: #031925;
     --accent2-color: #bee9e8;
@@ -25,9 +25,15 @@ header, main, footer{
     margin: auto;
 }
 
+
+header {
+    background-color: var(--secondary-color);
+}
+
+
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primar-coolor);
+    color: var(--primary-coolor);
 }
 
 
@@ -63,7 +69,7 @@ nav, p, section, article {
 h1 {
     position: absolute;
     top: 20px;
-    width: 100px;
+    width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
@@ -76,7 +82,7 @@ h1 {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: white;
+    background-color: var(--accent2-color)
 }   
 
 
