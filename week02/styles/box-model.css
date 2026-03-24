@@ -1,12 +1,13 @@
+/* The main container stying */
 .callout {
-    max-width: 400px;
-    margin: 10px;
+    max-width: 400px; /* This limits width 400px */
+    margin: 10px; /* this makes space outside the box */
     border: 1px solid rgba(0, 0, 0, .1);
-    padding: 15px;
-    background-color: #247;
-    color: #fff;
-}
+    padding: 15px; /* this makes space inside the box */
+    background-color: #247; /* Dark blue backround */
+    color: #fff; /* White text */
 
+}
 
 .callout img {
     float: right;
