@@ -1,4 +1,4 @@
-body {
+ body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 1rem;
 }
@@ -16,6 +16,7 @@ nav ul {
     justify-content: space-around;
     align-items: center;
 }
+
 
 nav a {
     display: block;

@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-
+/* Body */
 body{
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -27,66 +27,111 @@ header, main, footer{
 
 
 header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
     background-color: var(--secondary-color);
+    padding: 10px;
 }
 
 
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-coolor);
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
 
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-
-.socialmedia a {
+nav a {
     text-decoration: none;
+    font-weight: bold;
+    color: var(--accent1-color);
 }
-
-
-.socialmedia img {
-    width: 30px;
-    height: auto;
-}
-
 
 .hero {
     position: relative;
 }
 
-
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
 }
-
 
 h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
 }
 
-
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: var(--accent2-color)
-}   
-
+    right: 20px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
 
 .hero article img {
-    float: right;
-    width: 125px;
+    width: 100px;
+    margin-right: 10px;
 }
+
+.history {
+    border: 1px solid black;
+    padding: 15px;
+    margin: 20px;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.adventures {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+.adventures h2 {
+    margin-bottom: 10px;
+}
+
+.adventures figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+.adventures img {
+    width: 150px;
+    height: auto;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #b8a9d6;
+}
+
+.social-media img{
+    width: 30px;
+}
+
+
