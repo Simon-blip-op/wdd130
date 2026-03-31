@@ -116,7 +116,7 @@ h1 {
 }
 
 .adventures img {
-    width: 150px;
+    width: 100px;
 }
 
 
@@ -129,7 +129,7 @@ footer {
     background-color: var(--secondary-color)
 }
 
-.socialmedia img{
+.socialmedia img {
     width: 40px;
 }
 
