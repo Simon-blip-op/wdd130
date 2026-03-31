@@ -43,7 +43,7 @@ nav ul {
 nav a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--accent1-color);
+    color: white;
 }
 
 .hero {
@@ -128,8 +128,8 @@ footer {
     background-color: #b8a9d6;
 }
 
-.social-media img{
-    width: 30px;
+.socialmedia img{
+    width: 40px;
 }
 
 
