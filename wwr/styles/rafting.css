@@ -125,7 +125,7 @@ footer {
     align-items: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #b8a9d6;
+    background-color: var(--secondary-color)
 }
 
 .socialmedia img{
