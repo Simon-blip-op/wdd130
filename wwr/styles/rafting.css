@@ -7,21 +7,19 @@
     --body-font: Arial, sans-serif;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
-body{
+body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: var(--accent2-color);
 }
 
-header, main, footer{
+header, main, footer {
     width: 840px;
     margin: auto;
 }
@@ -47,101 +45,11 @@ nav a {
     color: white;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    font-family: var(--heading-font);
-    color: white;
-}
-
 main h1 {
     text-align: center;
     background-color: var(--primary-color);
     color: white;
-    margin: 0;
 }
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(255,255,255,0.8);
-    padding: 10px;
-}
-
-.hero article img {
-    float: right;
-    width: 100px;
-    margin-left: 10px;
-}
-
-.history {
-    border: 1px solid black;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-.history h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-family: var(--heading-font);
-}
-
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 10px;
-    align-items: center;
-}
-
-.adventures {
-    margin-top: 20px;
-    border: 1px solid black;
-    padding: 15px;
-    text-align: center;
-}
-
-.adventures h2 {
-    margin-bottom: 10px;
-    font-family: var(--heading-font);
-}
-
-.adventures figure {
-    display: inline-block;
-    margin: 10px;
-}
-
-.adventures img {
-    width: 100px;
-}
-
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: var(--secondary-color)
-}
-
-.socialmedia img {
-    width: 40px;
-}
-
-
-/* Contact Page */
 
 .contact-info {
     border: 1px solid black;
@@ -168,18 +76,10 @@ footer {
     padding: 15px;
 }
 
-.contact-form h2 {
-    margin-bottom: 10px;
-}
-
 .contact-form form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.contact-form label {
-    font-weight: bold;
 }
 
 .contact-form input,
@@ -187,34 +87,21 @@ footer {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
-    font-family: var(--body-font);
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form p {
-    font-weight: bold;
 }
 
 .contact-form button {
     background-color: var(--primary-color);
     color: white;
     padding: 10px;
-    font-size: 1.1rem;
     font-weight: bold;
     border: none;
     cursor: pointer;
     width: 200px;
-    margin-top: 10px;
 }
 
 .contact-form button:hover {
     background-color: var(--accent1-color);
 }
-
-/* Employees */
 
 .employees {
     border: 1px solid black;
@@ -235,8 +122,15 @@ footer {
     object-fit: cover;
 }
 
-.employee-grid figcaption {
-    margin-top: 5px;
-    font-weight: bold;
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color);
 }
 
+.socialmedia img {
+    width: 40px;
+}

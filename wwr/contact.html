@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="description" content="Get in touch with our rafting team for questions, bookings, or feedback.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contact | White Water Rafting</title>
 
+    <title>Contact Us | White Water Rafting Company</title>
+    <meta name="author" content="Simon Banda">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -24,10 +25,9 @@
 </header>
 
 <main>
-     <h1>Blue Waterfull Rafting</h1>
+    <h1>Blue Waterfall Rafting</h1>
 
     <section class="contact-info">
-        
         <h2>Contact Information</h2>
         <p>123 Main River Street</p>
         <p>Kolob, California</p>
@@ -38,53 +38,47 @@
     <section class="contact-layout">
 
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d169979.27927577!2d28.011332981826435!3d-26.122360490284372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1775896027674!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d169979.27927577!2d28.011332981826435!3d-26.122360490284372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1775896027674!5m2!1sen!2sza" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="contact-form">
             <h2>Send Us a Message</h2>
 
             <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
 
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <p>Purpose of Message:</p>
 
-                <p>Message Purpose</p>
-
-                <label>
-                    <input type="radio" name="purpose" value="General Inquiry" required>
-                    General Inquiry
+                <label for="general">
+                    <input type="radio" id="general" name="purpose" value="general"> General Inquiry
                 </label>
 
-                <label>
-                    <input type="radio" name="purpose" value="Reservation Question">
-                    Reservation Question
+                <label for="reservation">
+                    <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation
                 </label>
 
-                <label>
-                    <input type="radio" name="purpose" value="Website Suggestion">
-                    Website Suggestion
+                <label for="feedback">
+                    <input type="radio" id="feedback" name="purpose" value="feedback"> Website Feedback
                 </label>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe for a monthly newsletter
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
                 </label>
 
                 <button type="submit">Send Message</button>
-
             </form>
+
         </div>
 
     </section>
 
-    <!-- Employees -->
     <section class="employees">
         <h2>Meet Our Team</h2>
 
@@ -109,13 +103,13 @@
 </main>
 
 <footer>
-    <p>© 2026 White Water Rafting Company</p>
+    <p>© 2026 White Water Rafting Company | Simon Banda</p>
 
-    <div class="socialmedia">
-        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
-    </div>
+    <nav class="socialmedia">
+        <a href="#"><img src="images/facebook.svg" alt="Facebook icon"></a>
+        <a href="#"><img src="images/twitter.svg" alt="Twitter icon"></a>
+        <a href="#"><img src="images/instagram.svg" alt="Instagram icon"></a>
+    </nav>
 </footer>
 
 </body>
