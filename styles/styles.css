@@ -1,101 +1,107 @@
+/* root stores reusable variables. like shortcuts */
 :root {
-    --primary-color: darkblue;
-    --text-light: white;
-    --text-dark: #333;
-    --background-light: #eee;
+    --primary-color: darkblue; /* main color for the website, used for header and nav background */
+    --secondary-color: lightblue; /* used for accents and highlights */
+    --text-light: white; /* light text color for contrast against dark backgrounds */
+    --text-dark: #333; /* dark text color for readability on light backgrounds */
+    --background-light: #eee; /* light background color for sections and aside */
 
-    --border-color: black;
-    --border-light: rgb(0 0 0 / 0.2);
+    --border-color: black; /* color for borders and dividers */
+    --border-light: rgb(0 0 0 / 0.2); /* lighter border color for subtle dividers */
 
-    --spacing-small: 10px;
-    --spacing-medium: 15px;
-    --spacing-large: 20px;
+    --spacing-small: 10px; /* small spacing for padding and margins */
+    --spacing-medium: 15px; /* medium spacing for padding and margins */
+    --spacing-large: 20px; /* large spacing for padding and margins */
 
-    --image-small: 150px;
-    --image-medium: 200px;
+    --image-small: 150px; /* small image size for thumbnails and icons */
+    --image-medium: 200px; /* medium image size for main content and aside images */
 }
 
-/* conbine selector */
-header, .grid, footer{
-    max-width: 840px;
-    margin: 0 auto;
+/* apply to header, grid, and footer */
+header, .grid, footer{ 
+    max-width: 840px; /* set a max width for the layout to prevent it from stretching too wide on large screens */
+    margin: 0 auto; /* center the layout horizontally by setting left and right margins to auto */
 }
 
-/*  */
-nav {
-    background-color: var(--primary-color);
-    padding: var(--spacing-small);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+/* navigation bar styling */
+nav { 
+    background-color: var(--primary-color); /* use the primary color for the navigation bar background */
+    padding: var(--spacing-small); /* add padding for spacing around the nav content */
+    display: flex; /* use flexbox to layout the navigation links horizontally */
+    justify-content: space-evenly; /* evenly distribute the navigation links across the nav bar */
+    align-items: center; /* vertically center the navigation links within the nav bar */
 }
 
-/* links */
+/* navigation links */
 nav a {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--text-light);
+    display: block; /* make the links block-level elements to allow for padding and easier clicking */
+    padding: 0.5rem; /* add padding around the links for better spacing and clickability */
+    text-decoration: none; /* remove the default underline from links for a cleaner look */
+    font-size: 1.2rem; /* increase the font size of the navigation links for better readability */
+    font-weight: 700; /* make the navigation links bold for emphasis */
+    color: var(--text-light); /* use the light text color for contrast against the dark nav background */
 }
 
-/* heading */
+/* Main heading */
 h1 {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--border-color);
+    color: var(--primary-color); /* use the primary color for the main heading to maintain visual consistency with the nav bar */
+    font-family: 'Arial', sans-serif; /* set a clean, sans-serif font for
+    /* border-bottom: 2px solid var(--border-color)*/
 }
 
-/* gird latout */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
+/* grid layout for main content and aside */
+.grid { 
+    display: grid; /* use CSS Grid to create a two-column layout for the main content and aside */
+    grid-template-columns: 1fr 3fr; /* define the column sizes, with the aside taking up 1 fraction and the main content taking up 3 fractions of the available space */
+    align-items: center; /* vertically center the content within the grid cells */
 
 }
 
 /* aside styling */
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid var(--border-light);
-    padding: 1rem;
-    background-color: var(--background-light);
-    color: var(--text-dark);
-    text-align: center;
+    width: 20rem; /* set a fixed width for the aside to ensure it doesn't stretch too wide */
+    margin: 1rem; /* add margin around the aside for spacing from other elements */
+    border: 1px solid var(--border-light); /* add a light border around the aside for visual separation */
+    padding: 1rem; /* add padding inside the aside for spacing around the content */
+    background-color: var(--background-light); /* use the light background color for the aside to differentiate it from the main content */
+    color: var(--text-dark); /* use the dark text color for readability against the light background of the aside */
+    text-align: center; /* center the text within the aside for a balanced look */
     
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-column: 1 / 2; /* position the aside in the first column of the grid layout */
+    grid-row: 1 / 2; /* position the aside in the first row of the grid layout */
 
 }
 
-/* aside image */
+/* images within the aside */
 aside img {
-    width: var(--image-medium);
-    height: auto;
+    width: var(--image-medium); /* set the width of images in the aside to the medium size defined in the root variables */
+    height: auto; /* maintain the aspect ratio of the images by setting height to auto */
+    border: 1px solid var(--border-color); /* add a border around the images in the aside for visual separation */
 }
 
+/* main content styling */
 main {
-    grid-column: 2 / 3;
-    margin: 1rem;
+    grid-column: 2 / 3; /* position the main content in the second column of the grid layout */
+    margin: 1rem; /* add margin around the main content for spacing from other elements */
 }
 
-/* main content */
+/* images within the main content */
 main img {
-    width: var(--image-small);
-    height: auto;
-    border: 1px solid var(--border-color);
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    width: var(--image-small); /* set the width of images in the main content to the small size defined in the root variables */
+    height: auto; /* maintain the aspect ratio of the images by setting height to auto */
+    border: 1px solid var(--border-color); /* add a border around the images in the main content for visual separation */
+    padding: 2px; /* add padding around the images for spacing */
+    box-shadow: 0 0 30px gray; /* add a subtle shadow for depth */
 }
 
 /* paragraphs */
 p {
-    padding: 0;
+    padding: 0; /* remove default padding from paragraphs for better control over spacing */
 }
-    
+
+/* footer styling */
 footer {
-    margin-top: var(--spacing-medium);
-    border-top: 1px solid var(--border-color);
-    text-align: center;
+    margin-top: var(--spacing-medium); /* add top margin to create space between the main content and the footer */
+    border-top: 1px solid var(--border-color); /* add a border at the top of the footer for visual separation from the main content */
+    text-align: center; /* center the text within the footer for a balanced look */
 }
