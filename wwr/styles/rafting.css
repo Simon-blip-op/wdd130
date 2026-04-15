@@ -226,8 +226,9 @@ footer {
 
 .hero h1 {
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 5%;
+    left: 0%;
+    right: 0%;
     color: white;
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
